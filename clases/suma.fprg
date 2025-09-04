@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="suma"/>
+        <attribute name="authors" value="CENTIC"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-12 07:53:12 a.&#8239;m."/>
+        <attribute name="created" value="Q0VOVElDOzMtMi0yMjsyMDI1LTA4LTEyOzA3OjMwOjI3IGEu4oCvbS47MTAzOTI="/>
+        <attribute name="edited" value="Q0VOVElDOzMtMi0yMjsyMDI1LTA4LTEyOzA3OjUzOjEyIGEu4oCvbS47MjsxMDUwMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, suma" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <assign variable="suma" expression="a + b + c"/>
+            <output expression="suma" newline="True"/>
+            <if expression="a&gt;b">
+                <then>
+                    <output expression="a &amp; &quot;es mayor que&quot; &amp; b" newline="True"/>
+                </then>
+                <else>
+                    <output expression="b &amp;&quot;es mayor que&quot; &amp; a" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
