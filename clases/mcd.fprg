@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="mcd"/>
+        <attribute name="authors" value="CENTIC"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-19 06:54:08 a.&#8239;m."/>
+        <attribute name="created" value="Q0VOVElDO0hCMy0yOzIwMjUtMDgtMTk7MDY6NDg6MzQgYS7igK9tLjsxMDM5OA=="/>
+        <attribute name="edited" value="Q0VOVElDO0hCMy0yOzIwMjUtMDgtMTk7MDY6NTQ6MDggYS7igK9tLjsyOzEwNTA1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="mcd, i, a, b, lim" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <assign variable="i" expression="1"/>
+            <if expression="a &lt; b">
+                <then>
+                    <assign variable="lim" expression="a"/>
+                </then>
+                <else>
+                    <if expression="b &lt; a">
+                        <then>
+                            <assign variable="lim" expression="b"/>
+                        </then>
+                        <else>
+                            <assign variable="lim" expression="a"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <while expression="i &lt;= lim">
+                <if expression="a % i == 0 &amp;&amp; b % i == 0">
+                    <then>
+                        <assign variable="mcd" expression="i"/>
+                        <output expression="i" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="i" expression="i + 1"/>
+            </while>
+            <output expression="mcd" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

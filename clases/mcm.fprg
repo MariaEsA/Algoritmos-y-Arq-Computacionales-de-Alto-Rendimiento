@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="mcm"/>
+        <attribute name="authors" value="CENTIC"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-21 06:51:40 a.&#8239;m."/>
+        <attribute name="created" value="Q0VOVElDOzMtMi0yMjsyMDI1LTA4LTIxOzA2OjI3OjM4IGEu4oCvbS47MTAzOTk="/>
+        <attribute name="edited" value="Q0VOVElDOzMtMi0yMjsyMDI1LTA4LTIxOzA2OjUxOjQwIGEu4oCvbS47MjsxMDQ5OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x1, x2, mcm, i, lim" type="Integer" array="False" size=""/>
+            <input variable="x1"/>
+            <input variable="x2"/>
+            <if expression="x1&gt;x2">
+                <then>
+                    <assign variable="lim" expression="x1"/>
+                </then>
+                <else>
+                    <if expression="x2&gt;x1">
+                        <then>
+                            <assign variable="lim" expression="x2"/>
+                        </then>
+                        <else>
+                            <assign variable="lim" expression="x1"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <for variable="i" start="x1*x2" end="lim" direction="dec" step="1">
+                <if expression="i%x1==0&amp;&amp;i%x2==0">
+                    <then>
+                        <assign variable="mcm" expression="i"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="mcm" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

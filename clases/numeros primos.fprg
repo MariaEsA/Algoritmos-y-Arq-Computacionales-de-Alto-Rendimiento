@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="numeros primos"/>
+        <attribute name="authors" value="CENTIC"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-21 06:27:25 a.&#8239;m."/>
+        <attribute name="created" value="Q0VOVElDOzMtMi0yMjsyMDI1LTA4LTIxOzA2OjE4OjI1IGEu4oCvbS47MTAzOTU="/>
+        <attribute name="edited" value="Q0VOVElDOzMtMi0yMjsyMDI1LTA4LTIxOzA2OjI3OjI1IGEu4oCvbS47MTsxMDUwMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, m, i, divisores" type="Integer" array="False" size=""/>
+            <input variable="m"/>
+            <for variable="n" start="2" end="m" direction="inc" step="1">
+                <assign variable="divisores" expression="0"/>
+                <for variable="i" start="2" end="n-1" direction="inc" step="1">
+                    <if expression="n%i==0">
+                        <then>
+                            <assign variable="divisores" expression="divisores + 1"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+                <if expression="divisores&gt;0">
+                    <then/>
+                    <else>
+                        <output expression="n" newline="True"/>
+                    </else>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
