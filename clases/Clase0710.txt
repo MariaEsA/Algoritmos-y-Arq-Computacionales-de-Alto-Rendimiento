@@ -1,0 +1,3 @@
+##PROGAMACIÓN PARALELA
+----> Ecuaciones diferenciales, ecuación de calor y de Navier-Stokes
+##[https://github.com/sergiogelvez/MaterialClases/blob/main/Programas%20Clase%202022-%5B1%202%5D/Algoritmos%20AD/calor2.py]
